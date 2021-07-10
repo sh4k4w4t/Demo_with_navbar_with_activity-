@@ -11,12 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InsuranceDemo3">
-        <activity android:name=".Premium_Calculator"
-            android:parentActivityName=".HomePage"></activity>
-        <activity android:name=".Branch_Office"
-            android:parentActivityName=".HomePage"/>
-        <activity android:name=".Website"
-            android:parentActivityName=".HomePage"/>
+        <activity android:name=".log_regi_guest.Guest_verification"></activity>
+        <activity
+            android:name=".Premium_Calculator"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".Branch_Office"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".Website"
+            android:parentActivityName=".HomePage" />
         <activity android:name=".HomePage" />
         <activity android:name=".Login_Registration_Guest" />
         <activity android:name=".SplashScreen">

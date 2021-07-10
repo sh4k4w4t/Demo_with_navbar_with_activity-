@@ -7,7 +7,6 @@
 
     <!-- android resource empty in ImageView-->
     <ImageView
-        android:id="@+id/home_imageView_Id"
         android:layout_width="match_parent"
         android:layout_height="220dp"/>
 
@@ -127,6 +126,7 @@
 
         <!-- -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/home_cardview_policy_statement_id"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_row="1"
@@ -160,6 +160,8 @@
 
         <!-- -->
         <androidx.cardview.widget.CardView
+
+            android:id="@+id/home_cardview_claim_id"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_row="1"
@@ -193,6 +195,7 @@
 
         <!-- -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/home_cardview_claim_status_id"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_row="1"
@@ -228,6 +231,7 @@
 
         <!-- -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/home_cardview_download_form_id"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_row="2"

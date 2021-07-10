@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.insurancedemo3.log_regi_guest.Guest_verification;
+
 public class Login_Registration_Guest extends AppCompatActivity implements View.OnClickListener {
 
     Button login_btn,guest_btn;
@@ -42,6 +44,11 @@ public class Login_Registration_Guest extends AppCompatActivity implements View.
 
         if (userID_s.equals("bengal") && password_S.equals("b123")){
             Intent intent= new Intent(Login_Registration_Guest.this,HomePage.class);
+            startActivity(intent);
+        }
+
+        if (v.getId()==R.id.button_guest){
+            Intent intent= new Intent(Login_Registration_Guest.this, Guest_verification.class);
             startActivity(intent);
         }
 

@@ -2,6 +2,7 @@ package com.example.insurancedemo3;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -16,6 +17,7 @@ import android.view.WindowManager;
 public class HomePage extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
+    CardView individual_plan,payment_method,premium_calculator,download_form,claim_status,claim,policy_statement;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,13 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.home_page);
 
         drawerLayout=(DrawerLayout) findViewById(R.id.drawerLayoutID);
+        individual_plan=(CardView) findViewById(R.id.home_cardview_individual_plan_Id);
+        payment_method=(CardView) findViewById(R.id.home_cardview_payment_method_id);
+        premium_calculator=(CardView) findViewById(R.id.home_cardview_premium_calculator_id);
+        claim=(CardView) findViewById(R.id.home_cardview_claim_id);
+        claim_status=(CardView) findViewById(R.id.home_cardview_claim_status_id);
+        policy_statement=(CardView) findViewById(R.id.home_cardview_policy_statement_id);
+        download_form=(CardView) findViewById(R.id.home_cardview_download_form_id);
     }
 
     //nav item======================================================================================
