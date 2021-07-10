@@ -14,6 +14,8 @@
     <string name="website_url">https://www.nrbgloballife.com/</string>
     <string name="premium_calculator_url">https://www.nrbgloballife.com/PremiumCalc</string>
     <string name="branch_details_url">https://www.nrbgloballife.com/WebSiteContent/Index?value=Collection_Booth</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

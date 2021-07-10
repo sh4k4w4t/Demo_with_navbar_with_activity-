@@ -14,7 +14,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Premium_Calculator extends AppCompatActivity {
+public class Payment extends AppCompatActivity {
 
     WebView webView;
     DrawerLayout drawerLayout;
@@ -25,13 +25,14 @@ public class Premium_Calculator extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.premium_calculator);
+        setContentView(R.layout.payment);
 
-        String premium_cal_url=getResources().getString(R.string.premium_calculator_url);
+        String payment_url=getResources().getString(R.string.payment_url);
 
         drawerLayout=(DrawerLayout) findViewById(R.id.drawerLayoutID);
         webView=(WebView) findViewById(R.id.webview_id);
-        webView.loadUrl(premium_cal_url);
+
+        webView.loadUrl(payment_url);
 
         // Enable Javascript
         WebSettings webSettings = webView.getSettings();
@@ -43,12 +44,9 @@ public class Premium_Calculator extends AppCompatActivity {
 
     //nav item======================================================================================
 
+    public void ClickMenu(View view){ openDrawer(drawerLayout); }
 
-    public void ClickMenu(View view){
-        openDrawer(drawerLayout);
-    }
-
-    public static void openDrawer(DrawerLayout drawerLayout) { drawerLayout.openDrawer(GravityCompat.START); }
+    public static void openDrawer(DrawerLayout drawerLayout) { drawerLayout.openDrawer(GravityCompat.START);}
 
     public void ClickLogo(View view){
         closeDrawer(drawerLayout);
@@ -60,15 +58,13 @@ public class Premium_Calculator extends AppCompatActivity {
         }
     }
 
-    public void ClickHome(View view){ redirectActivity(Premium_Calculator.this,HomePage.class); }
+    public void ClickHome(View view){ redirectActivity(Payment.this,HomePage.class); }
 
-    public void ClickPremiumCalculator(View view){ recreate();}
+    public void ClickPremiumCalculator(View view){ redirectActivity(Payment.this,Premium_Calculator.class);}
 
-    public void ClickBranchOffice(View view){ redirectActivity(Premium_Calculator.this,Branch_Office.class);}
+    public void ClickBranchOffice(View view){ redirectActivity(Payment.this,Branch_Office.class);}
 
-    public void ClickWebsite(View view){
-        redirectActivity(Premium_Calculator.this,Website.class);
-    }
+    public void ClickWebsite(View view){ redirectActivity(Payment.this,Website.class); }
 
     public static void redirectActivity(Activity activity, Class aclass) {
         Intent intent=new Intent(activity,aclass);

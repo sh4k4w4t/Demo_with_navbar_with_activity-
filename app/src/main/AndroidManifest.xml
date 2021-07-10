@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InsuranceDemo3">
-        <activity android:name=".log_regi_guest.Guest_verification"></activity>
+        <activity android:name=".log_regi_guest.OTP_verification"></activity>
+        <activity
+            android:name=".Payment"
+            android:parentActivityName=".HomePage" />
+        <activity android:name=".log_regi_guest.Guest_verification" />
         <activity
             android:name=".Premium_Calculator"
             android:parentActivityName=".HomePage" />

@@ -22,11 +22,9 @@ public class HomePage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         setContentView(R.layout.home_page);
 
         drawerLayout=(DrawerLayout) findViewById(R.id.drawerLayoutID);
@@ -37,7 +35,29 @@ public class HomePage extends AppCompatActivity {
         claim_status=(CardView) findViewById(R.id.home_cardview_claim_status_id);
         policy_statement=(CardView) findViewById(R.id.home_cardview_policy_statement_id);
         download_form=(CardView) findViewById(R.id.home_cardview_download_form_id);
+
+        premium_calculator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(v.getId()==R.id.home_cardview_premium_calculator_id){
+                    Intent intent=new Intent(HomePage.this,Premium_Calculator.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
+        payment_method.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(v.getId()==R.id.home_cardview_payment_method_id){
+                    Intent intent=new Intent(HomePage.this,Payment.class);
+                    startActivity(intent);
+                }
+            }
+        });
     }
+
+
 
     //nav item======================================================================================
 
@@ -107,5 +127,7 @@ public class HomePage extends AppCompatActivity {
         AlertDialog alert=builder.create();
         alert.show();
     }
+
+
     // End backpressed section for alert box========================================================
 }
