@@ -21,7 +21,8 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:textColor="@android:color/white"/>
+        android:textColor="#EFE376"
+        android:layout_gravity="center_horizontal" />
 
 
 </LinearLayout>
