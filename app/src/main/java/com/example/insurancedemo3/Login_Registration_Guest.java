@@ -15,7 +15,8 @@ import com.example.insurancedemo3.log_regi_guest.Guest_verification;
 
 public class Login_Registration_Guest extends AppCompatActivity implements View.OnClickListener {
 
-    Button login_btn,guest_btn;
+    Button login_btn;
+    TextView guest_link;
     EditText user_id,password;
 
     @Override
@@ -27,12 +28,12 @@ public class Login_Registration_Guest extends AppCompatActivity implements View.
         setContentView(R.layout.login_registration_guest);
 
         login_btn=(Button) findViewById(R.id.button_login);
-        guest_btn=(Button) findViewById(R.id.button_guest);
+        guest_link=(TextView) findViewById(R.id.guest_register);
         user_id=(EditText) findViewById(R.id.userID);
         password=(EditText) findViewById(R.id.password);
 
         login_btn.setOnClickListener(this);
-        guest_btn.setOnClickListener(this);
+        guest_link.setOnClickListener(this);
     }
 
     @Override
@@ -45,7 +46,7 @@ public class Login_Registration_Guest extends AppCompatActivity implements View.
             startActivity(intent);
         }
 
-        if (v.getId()==R.id.button_guest){
+        if (v.getId()==R.id.guest_register){
             Intent intent= new Intent(Login_Registration_Guest.this, Guest_verification.class);
             startActivity(intent);
         }

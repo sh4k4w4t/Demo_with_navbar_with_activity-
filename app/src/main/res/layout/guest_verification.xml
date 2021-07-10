@@ -1,73 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="@drawable/background_gradient_login_regi_guest_page"
+    android:gravity="center"
+    android:padding="16dp"
     tools:context=".log_regi_guest.Guest_verification">
 
 
-    <EditText
-        android:id="@+id/guestMobileNumber"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#E6E0E0"
-        android:hint="  Mobile Number"
-        android:padding="5dp"
-        android:layout_margin="20dp"
-        android:inputType="phone"/>
-
-    <Button
-        android:id="@+id/guest_button_login"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:background="@drawable/button_registration"
-        android:shadowColor="#A8A8A8"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"
-        android:text="Continue As Guest"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:layout_margin="20dp"/>
-
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OR"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:gravity="center_horizontal"
-        android:layout_marginBottom="15dp"/>
+        android:layout_gravity="center">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Already have account?"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="15sp"
-        android:gravity="center_horizontal"
-        android:layout_marginBottom="10dp"/>
+        <androidx.cardview.widget.CardView
+            xmlns:Card_View="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            Card_View:cardCornerRadius="5dp"
+            Card_View:cardElevation="5dp">
 
-    <Button
-        android:id="@+id/guest_button_Back_to_login_page"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:background="@drawable/button_login"
-        android:shadowColor="#A8A8A8"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"
-        android:text="Login"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/guest_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Enter Your Mobile Number"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingStart="5dp"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp" />
 
 
-</LinearLayout>
+                <Button
+                    android:id="@+id/guest_login"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button_login"
+                    android:text="Continue as guest"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"/>
+
+                <TextView
+                    android:id="@+id/guest_go_back_login_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:text="Already have a account?"
+                    android:textColor="#FF2A7EE6"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/round_background"
+        android:padding="15dp"
+        android:src="@drawable/profile"/>
+
+
+</RelativeLayout>

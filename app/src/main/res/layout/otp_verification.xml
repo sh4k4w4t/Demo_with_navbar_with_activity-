@@ -1,47 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="@drawable/background_gradient_login_regi_guest_page"
+    android:gravity="center"
+    android:padding="16dp"
     tools:context=".log_regi_guest.OTP_verification">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OTP Verification"
-        android:textStyle="bold"
-        android:textSize="40sp"
-        android:textColor="#CAC6C6"
-        android:textAlignment="center"
-        android:gravity="center_horizontal" />
+        android:layout_gravity="center">
 
-    <EditText
-        android:id="@+id/otp_Number"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#E6E0E0"
-        android:hint="  Enter One-time password"
-        android:padding="5dp"
-        android:layout_margin="20dp"
-        android:inputType="phone"/>
+        <androidx.cardview.widget.CardView
+            xmlns:Card_View="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            Card_View:cardCornerRadius="5dp"
+            Card_View:cardElevation="5dp">
 
-    <Button
-        android:id="@+id/otp_submit_button"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:background="@drawable/button_registration"
-        android:shadowColor="#A8A8A8"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"
-        android:text="Submit"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:layout_margin="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/otp_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Enter One-time Password"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingStart="5dp"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp" />
 
 
-</LinearLayout>
+                <Button
+                    android:id="@+id/otp_submit_button"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button_login"
+                    android:text="Submit"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/otp_to_go_back_guest_verification_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:text="Want to change number or resend OTP?"
+                    android:textColor="#FF2A7EE6"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/otp_to_go_back_login_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:text="Already have a account?"
+                    android:textColor="#FF2A7EE6"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/round_background"
+        android:padding="15dp"
+        android:src="@drawable/profile"/>
+
+
+</RelativeLayout>

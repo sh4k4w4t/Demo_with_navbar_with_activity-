@@ -8,13 +8,17 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.insurancedemo3.Login_Registration_Guest;
 import com.example.insurancedemo3.R;
 
 public class Guest_verification extends AppCompatActivity implements View.OnClickListener {
 
-    Button guestNumberSubmit_btn, backLoginPage_btn;
+    Button guest_mobile_number_submit_button;
+    TextView guest_back_login_page;
+    EditText guest_mobile_number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,21 +28,22 @@ public class Guest_verification extends AppCompatActivity implements View.OnClic
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.guest_verification);
 
-        guestNumberSubmit_btn=(Button) findViewById(R.id.guest_button_login);
-        backLoginPage_btn=(Button) findViewById(R.id.guest_button_Back_to_login_page);
+        guest_mobile_number_submit_button=(Button) findViewById(R.id.guest_login);
+        guest_back_login_page=(TextView) findViewById(R.id.guest_go_back_login_page);
+        guest_mobile_number=(EditText) findViewById(R.id.guest_mobile_number);
 
-        guestNumberSubmit_btn.setOnClickListener(this);
-        backLoginPage_btn.setOnClickListener(this);
+        guest_mobile_number_submit_button.setOnClickListener(this);
+        guest_back_login_page.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
-        if (v.getId()==R.id.guest_button_Back_to_login_page){
+        if (v.getId()==R.id.guest_go_back_login_page){
             Intent intent=new Intent(Guest_verification.this, Login_Registration_Guest.class);
             startActivity(intent);
         }
-        if (v.getId()==R.id.guest_button_login){
+        if (v.getId()==R.id.guest_login){
             Intent intent=new Intent(Guest_verification.this,OTP_verification.class);
             startActivity(intent);
         }
