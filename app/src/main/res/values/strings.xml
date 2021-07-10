@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">InsuranceDemo3</string>
+
+
+    <!--=======================Navigation header=================================================-->
+
+    <string name="user_name">Bengal Islami life Insurance</string>
+    <string name="user_mail">bilicl@tuta.io</string>
+
+
+    <!--=======================base url==========================================================-->
+
+    <string name="payment_url">https://www.ims.nrbglife.com:8090</string>
+    <string name="website_url">https://www.nrbgloballife.com/</string>
+    <string name="premium_calculator_url">https://www.nrbgloballife.com/PremiumCalc</string>
+    <string name="branch_details_url">https://www.nrbgloballife.com/WebSiteContent/Index?value=Collection_Booth</string>
+
+
+</resources>

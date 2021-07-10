@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_gradient_login_regi_guest_page"
+    tools:context=".Login_Registration_Guest">
+
+    <EditText
+        android:id="@+id/userID"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#E6E0E0"
+        android:hint="  User ID"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#E6E0E0"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:hint="  User password"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_login"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/warning_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/button_guest"
+        android:text="Guest"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_guest"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>
