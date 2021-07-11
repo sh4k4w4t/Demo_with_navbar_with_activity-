@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -18,6 +19,7 @@
             android:layout_height="96dp"
             android:src="@drawable/icon_profile_picture"
             app:civ_border_width="2dp"
+            android:layout_marginTop="10dp"
             app:civ_border_color="#FF000000"
             android:onClick="ClickLogo"/>
 
@@ -61,7 +63,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Home"
+            android:text="@string/home"
             android:textSize="18sp"
             android:padding="12dp"
             android:textStyle="bold"/>
@@ -83,13 +85,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:src="@drawable/icon_premium_calculator"/>
+            android:src="@drawable/icon_premium_calculator"
+            android:contentDescription="@string/premium_calculator_icon" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Premium Calculator"
+            android:text="@string/premium_calculator"
             android:textSize="18sp"
             android:padding="12dp"
             android:textStyle="bold"/>
@@ -115,7 +118,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Branch Office"
+            android:text="@string/branch_office"
             android:textSize="18sp"
             android:padding="12dp"
             android:textStyle="bold"/>
@@ -135,13 +138,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:src="@drawable/icon_website"/>
+            android:src="@drawable/icon_website"
+            android:contentDescription="@string/website_icon" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Website"
+            android:text="@string/website"
             android:textSize="18sp"
             android:padding="12dp"
             android:textStyle="bold"/>

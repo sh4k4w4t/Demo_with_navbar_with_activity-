@@ -6,12 +6,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo_bengal"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo_bengal"
         android:supportsRtl="true"
-        android:theme="@style/Theme.InsuranceDemo3">
-        <activity android:name=".log_regi_guest.OTP_verification"></activity>
+        android:theme="@style/Theme.InsuranceDemo3"> <!--@style/Theme.InsuranceDemo3-->
+        <activity android:name=".log_regi_guest.OTP_verification" />
         <activity
             android:name=".Payment"
             android:parentActivityName=".HomePage" />

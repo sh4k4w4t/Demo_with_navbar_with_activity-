@@ -47,7 +47,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Individual Plan"
+                    android:text="@string/individual_plan"
                     android:textStyle="bold"/>
             </LinearLayout>
 
@@ -81,7 +81,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Payment Method"
+                    android:text="@string/payment_method"
                     android:textStyle="bold"/>
             </LinearLayout>
 
@@ -116,7 +116,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Premium Calculator"
+                    android:text="@string/premium_calculator"
                     android:textStyle="bold"/>
             </LinearLayout>
 
@@ -152,7 +152,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Policy Statement"
+                    android:text="@string/policy_statement"
                     android:textStyle="bold"/>
             </LinearLayout>
 
@@ -187,7 +187,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Claim"
+                    android:text="@string/claim"
                     android:textStyle="bold"/>
             </LinearLayout>
 
@@ -221,7 +221,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Claim Status"
+                    android:text="@string/claim_status"
                     android:textStyle="bold"/>
             </LinearLayout>
 
@@ -257,7 +257,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Download Form"
+                    android:text="@string/download_form"
                     android:textStyle="bold"/>
             </LinearLayout>
 

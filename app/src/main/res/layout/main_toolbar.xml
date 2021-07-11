@@ -17,7 +17,7 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:text="Bengal Islami Life Insurance"
+        android:text="@string/bengal_islami_life_insurance"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textAlignment="center"

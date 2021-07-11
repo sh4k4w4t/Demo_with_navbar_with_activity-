@@ -36,7 +36,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:hint="Enter Your Mobile Number"
+                    android:hint="@string/enter_your_mobile_number"
                     android:inputType="number"
                     android:maxLines="1"
                     android:paddingStart="5dp"
@@ -51,7 +51,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="20dp"
                     android:background="@drawable/button_login"
-                    android:text="Continue as guest"
+                    android:text="@string/continue_as_guest"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
                     android:shadowColor="#A8A8A8"
@@ -65,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_gravity="center"
-                    android:text="Already have a account?"
+                    android:text="@string/already_have_a_account"
                     android:textColor="#FF2A7EE6"
                     android:textStyle="bold"
                     android:textSize="15sp"/>
@@ -83,7 +83,8 @@
         android:layout_marginTop="-50dp"
         android:background="@drawable/round_background"
         android:padding="15dp"
-        android:src="@drawable/profile"/>
+        android:src="@drawable/profile"
+        android:contentDescription="@string/guest_icon" />
 
 
 </RelativeLayout>

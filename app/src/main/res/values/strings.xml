@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">InsuranceDemo3</string>
+    <string name="app_name">Bengal</string>
 
 
     <!--=======================Navigation header=================================================-->
@@ -14,8 +14,35 @@
     <string name="website_url">https://www.nrbgloballife.com/</string>
     <string name="premium_calculator_url">https://www.nrbgloballife.com/PremiumCalc</string>
     <string name="branch_details_url">https://www.nrbgloballife.com/WebSiteContent/Index?value=Collection_Booth</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <!--============================generate from xml ===========================================-->
+
+    <string name="home">Home</string>
+    <string name="premium_calculator">Premium Calculator</string>
+    <string name="branch_office">Branch Office</string>
+    <string name="website">Website</string>
+    <string name="website_icon">website_icon</string>
+    <string name="premium_calculator_icon">premium_calculator_icon</string>
+    <string name="enter_your_mobile_number">Enter Your Mobile Number</string>
+    <string name="continue_as_guest">Continue as guest</string>
+    <string name="guest_icon">guest_icon</string>
+    <string name="individual_plan">Individual Plan</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="policy_statement">Policy Statement</string>
+    <string name="claim">Claim</string>
+    <string name="claim_status">Claim Status</string>
+    <string name="download_form">Download Form</string>
+    <string name="user_id">User ID</string>
+    <string name="user_password">User Password</string>
+    <string name="login">Login</string>
+    <string name="continue_as_guest_1">CONTINUE AS GUEST</string>
+    <string name="bengal_islami_life_insurance">Bengal Islami Life Insurance</string>
+    <string name="enter_one_time_password">Enter One-time Password</string>
+    <string name="submit">Submit</string>
+    <string name="want_to_change_number_or_resend_otp">Want to change number or resend OTP?</string>
+    <string name="already_have_a_account">Already have a account?</string>
 
 
 </resources>

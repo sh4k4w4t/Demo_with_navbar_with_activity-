@@ -35,7 +35,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:hint="Enter One-time Password"
+                    android:hint="@string/enter_one_time_password"
                     android:inputType="number"
                     android:maxLines="1"
                     android:paddingStart="5dp"
@@ -50,7 +50,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="20dp"
                     android:background="@drawable/button_login"
-                    android:text="Submit"
+                    android:text="@string/submit"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"/>
 
@@ -61,7 +61,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:layout_gravity="center"
-                    android:text="Want to change number or resend OTP?"
+                    android:text="@string/want_to_change_number_or_resend_otp"
                     android:textColor="#FF2A7EE6"
                     android:textStyle="bold"
                     android:textSize="15sp"/>
@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_gravity="center"
-                    android:text="Already have a account?"
+                    android:text="@string/already_have_a_account"
                     android:textColor="#FF2A7EE6"
                     android:textStyle="bold"
                     android:textSize="15sp"/>
