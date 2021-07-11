@@ -14,7 +14,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Payment extends AppCompatActivity {
+public class Downlaod_form extends AppCompatActivity {
 
     WebView webView;
     DrawerLayout drawerLayout;
@@ -25,20 +25,17 @@ public class Payment extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.payment);
+        setContentView(R.layout.downlaod_form);
 
-        String payment_url=getResources().getString(R.string.payment_url);
+        String download_form_url=getResources().getString(R.string.download_form_url);
 
         drawerLayout=(DrawerLayout) findViewById(R.id.drawerLayoutID);
         webView=(WebView) findViewById(R.id.webview_id);
 
-        webView.loadUrl(payment_url);
-
-        // Enable Javascript
+        webView.loadUrl(download_form_url);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        // Force links and redirects to open in the WebView instead of in a browser
         webView.setWebViewClient(new WebViewClient());
     }
 
@@ -58,13 +55,13 @@ public class Payment extends AppCompatActivity {
         }
     }
 
-    public void ClickHome(View view){ redirectActivity(Payment.this,HomePage.class); }
+    public void ClickHome(View view){ redirectActivity(Downlaod_form.this,HomePage.class); }
 
-    public void ClickPremiumCalculator(View view){ redirectActivity(Payment.this,Premium_Calculator.class);}
+    public void ClickPremiumCalculator(View view){ redirectActivity(Downlaod_form.this,Premium_Calculator.class);}
 
-    public void ClickBranchOffice(View view){ redirectActivity(Payment.this,Branch_Office.class);}
+    public void ClickBranchOffice(View view){ redirectActivity(Downlaod_form.this,Branch_Office.class);}
 
-    public void ClickWebsite(View view){ redirectActivity(Payment.this,Website.class); }
+    public void ClickWebsite(View view){ redirectActivity(Downlaod_form.this,Website.class); }
 
     public void ClickMyPolicy(View view){}
     public void ClickHospital(View view){}

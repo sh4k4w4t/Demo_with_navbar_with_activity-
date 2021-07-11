@@ -34,11 +34,9 @@ public class Website extends AppCompatActivity {
 
         webView.loadUrl(website_url);
 
-        // Enable Javascript
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        // Force links and redirects to open in the WebView instead of in a browser
         webView.setWebViewClient(new WebViewClient());
     }
 
@@ -69,6 +67,10 @@ public class Website extends AppCompatActivity {
     public void ClickWebsite(View view){
         recreate();
     }
+
+    public void ClickMyPolicy(View view){}
+    public void ClickHospital(View view){}
+    public void ClickContact(View view){}
 
     public static void redirectActivity(Activity activity, Class aclass) {
         Intent intent=new Intent(activity,aclass);

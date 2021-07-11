@@ -55,6 +55,16 @@ public class HomePage extends AppCompatActivity {
                 }
             }
         });
+
+        download_form.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(v.getId()==R.id.home_cardview_download_form_id){
+                    Intent intent=new Intent(HomePage.this,Downlaod_form.class);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
 
@@ -89,6 +99,10 @@ public class HomePage extends AppCompatActivity {
     public void ClickWebsite(View view){
         redirectActivity(HomePage.this,Website.class);
     }
+
+    public void ClickMyPolicy(View view){}
+    public void ClickHospital(View view){}
+    public void ClickContact(View view){}
 
     public static void redirectActivity(Activity activity, Class aclass) {
         Intent intent=new Intent(activity,aclass);

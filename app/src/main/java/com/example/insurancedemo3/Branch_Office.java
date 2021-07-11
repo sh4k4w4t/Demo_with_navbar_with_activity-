@@ -70,6 +70,10 @@ public class Branch_Office extends AppCompatActivity {
         redirectActivity(Branch_Office.this,Website.class);
     }
 
+    public void ClickMyPolicy(View view){}
+    public void ClickHospital(View view){}
+    public void ClickContact(View view){}
+
     public static void redirectActivity(Activity activity, Class aclass) {
         Intent intent=new Intent(activity,aclass);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

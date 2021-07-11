@@ -51,12 +51,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
         android:onClick="ClickHome">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/icon_homepage"
+            android:contentDescription="@string/home_page_icon"
             android:padding="8dp"/>
 
         <TextView
@@ -68,7 +70,33 @@
             android:padding="12dp"
             android:textStyle="bold"/>
 
+    </LinearLayout>
 
+    <!--===============My policy====================-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickMyPolicy">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_my_policy"
+            android:contentDescription="@string/my_policy_icon"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/my_policy"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 
@@ -119,6 +147,60 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/branch_office"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <!--===============Network hospital====================-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickHospital">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/icon_hospital"
+            android:contentDescription="@string/hospital_icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/network_hospital"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <!--===============Contact us====================-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickContact">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/icon_contact"
+            android:contentDescription="@string/contact_icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/contact_us"
             android:textSize="18sp"
             android:padding="12dp"
             android:textStyle="bold"/>

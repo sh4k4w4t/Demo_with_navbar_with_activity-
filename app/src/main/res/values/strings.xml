@@ -14,7 +14,7 @@
     <string name="website_url">https://www.nrbgloballife.com/</string>
     <string name="premium_calculator_url">https://www.nrbgloballife.com/PremiumCalc</string>
     <string name="branch_details_url">https://www.nrbgloballife.com/WebSiteContent/Index?value=Collection_Booth</string>
-
+    <string name="download_form_url">https://www.nrbgloballife.com/CustomerCare/DocumentsIndex</string>
 
 
     <!--============================generate from xml ===========================================-->
@@ -43,6 +43,13 @@
     <string name="submit">Submit</string>
     <string name="want_to_change_number_or_resend_otp">Want to change number or resend OTP?</string>
     <string name="already_have_a_account">Already have a account?</string>
+    <string name="network_hospital">Network Hospital</string>
+    <string name="hospital_icon">hospital icon</string>
+    <string name="contact_icon">contact icon</string>
+    <string name="contact_us">Contact us</string>
+    <string name="my_policy">My Policy</string>
+    <string name="my_policy_icon">my policy icon</string>
+    <string name="home_page_icon">home page icon</string>
 
 
 </resources>

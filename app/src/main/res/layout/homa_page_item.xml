@@ -8,14 +8,16 @@
     <!-- android resource empty in ImageView-->
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="220dp"/>
+        android:layout_height="233dp"
+        android:src="@drawable/home_page_header_image_1"/>
 
     <GridLayout
         android:id="@+id/home_gridLayout_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:rowCount="3"
-        android:columnCount="3">
+        android:columnCount="3"
+        android:paddingTop="5dp">
 
         <!-- ============================1st line gridlayout =========================================-->
 
