@@ -17,7 +17,7 @@ import android.view.WindowManager;
 public class HomePage extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
-    CardView individual_plan,payment_method,premium_calculator,download_form,claim_status,claim,policy_statement;
+    CardView job_circular,individual_plan,payment_method,premium_calculator,download_form,claim_status,claim,policy_statement;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,8 @@ public class HomePage extends AppCompatActivity {
         claim_status=(CardView) findViewById(R.id.home_cardview_claim_status_id);
         policy_statement=(CardView) findViewById(R.id.home_cardview_policy_statement_id);
         download_form=(CardView) findViewById(R.id.home_cardview_download_form_id);
+        job_circular=(CardView) findViewById(R.id.home_cardview_job_circular_id);
+
 
         premium_calculator.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,6 +105,30 @@ public class HomePage extends AppCompatActivity {
     public void ClickMyPolicy(View view){}
     public void ClickHospital(View view){}
     public void ClickContact(View view){}
+
+    public void ClickLogout(View view){
+        logout(HomePage.this);
+    }
+    public static void logout(final Activity activity) {
+        android.app.AlertDialog.Builder builder=new android.app.AlertDialog.Builder(activity);
+        builder.setTitle("Logout");
+        builder.setMessage("Are you want to exit app?");
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                activity.finishAffinity();
+                System.exit(0);
+
+            }
+        });
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        builder.show();
+    }
 
     public static void redirectActivity(Activity activity, Class aclass) {
         Intent intent=new Intent(activity,aclass);

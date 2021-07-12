@@ -50,6 +50,9 @@
     <string name="my_policy">My Policy</string>
     <string name="my_policy_icon">my policy icon</string>
     <string name="home_page_icon">home page icon</string>
+    <string name="job_circular">Job Circular</string>
+    <string name="logout_apps">Logout apps</string>
+    <string name="logout">Logout</string>
 
 
 </resources>

@@ -5,6 +5,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -66,6 +67,30 @@ public class Downlaod_form extends AppCompatActivity {
     public void ClickMyPolicy(View view){}
     public void ClickHospital(View view){}
     public void ClickContact(View view){}
+
+    public void ClickLogout(View view){
+        logout(Downlaod_form.this);
+    }
+    public static void logout(final Activity activity) {
+        android.app.AlertDialog.Builder builder=new android.app.AlertDialog.Builder(activity);
+        builder.setTitle("Logout");
+        builder.setMessage("Are you want to exit app?");
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                activity.finishAffinity();
+                System.exit(0);
+
+            }
+        });
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        builder.show();
+    }
 
     public static void redirectActivity(Activity activity, Class aclass) {
         Intent intent=new Intent(activity,aclass);
