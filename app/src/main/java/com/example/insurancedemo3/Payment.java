@@ -28,12 +28,15 @@ public class Payment extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.payment);
 
-        String payment_url=getResources().getString(R.string.payment_url);
+
+        String payment_base_url=getResources().getString(R.string.payment_url_base);
+        String payment_url_1=getResources().getString(R.string.payment_url_1);
+        String payment_full_address=payment_base_url+payment_url_1;
 
         drawerLayout=(DrawerLayout) findViewById(R.id.drawerLayoutID);
         webView=(WebView) findViewById(R.id.webview_id);
 
-        webView.loadUrl(payment_url);
+        webView.loadUrl(payment_full_address);
 
         // Enable Javascript
         WebSettings webSettings = webView.getSettings();

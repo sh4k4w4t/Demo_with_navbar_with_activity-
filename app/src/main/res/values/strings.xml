@@ -8,9 +8,10 @@
     <string name="user_mail">bengal.islami@protonmail.com</string>
 
 
-    <!--=======================base url==========================================================-->
+    <!--=======================all url==========================================================-->
 
-    <string name="payment_url">https://www.ims.nrbglife.com:8090</string>
+    <string name="payment_url_base">https://www.ims.nrbglife.com:8090/</string>
+    <string name="payment_url_1">OnlinePayment/OnlinePay/Index</string>
     <string name="website_url">https://www.nrbgloballife.com/</string>
     <string name="premium_calculator_url">https://www.nrbgloballife.com/PremiumCalc</string>
     <string name="branch_details_url">https://www.nrbgloballife.com/WebSiteContent/Index?value=Collection_Booth</string>
