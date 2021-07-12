@@ -53,6 +53,7 @@
     <string name="job_circular">Job Circular</string>
     <string name="logout_apps">Logout apps</string>
     <string name="logout">Logout</string>
+    <string name="notice_board">Notice Board</string>
 
 
 </resources>

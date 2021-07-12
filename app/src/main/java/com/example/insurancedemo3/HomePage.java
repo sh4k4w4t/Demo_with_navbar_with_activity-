@@ -17,7 +17,7 @@ import android.view.WindowManager;
 public class HomePage extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
-    CardView job_circular,individual_plan,payment_method,premium_calculator,download_form,claim_status,claim,policy_statement;
+    CardView job_circular,individual_plan,payment_method,premium_calculator,download_form,claim_status,claim,policy_statement,notice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,7 @@ public class HomePage extends AppCompatActivity {
         policy_statement=(CardView) findViewById(R.id.home_cardview_policy_statement_id);
         download_form=(CardView) findViewById(R.id.home_cardview_download_form_id);
         job_circular=(CardView) findViewById(R.id.home_cardview_job_circular_id);
+        notice=(CardView) findViewById(R.id.home_cardview_notice_id);
 
 
         premium_calculator.setOnClickListener(new View.OnClickListener() {

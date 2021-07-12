@@ -16,7 +16,7 @@
             layout="@layout/main_toolbar"/>
 
         <include
-            layout="@layout/homa_page_item"/>
+            layout="@layout/home_item"/>
 
     </LinearLayout>
 

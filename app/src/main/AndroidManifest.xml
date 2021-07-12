@@ -11,8 +11,7 @@
         android:roundIcon="@drawable/logo_application"
         android:supportsRtl="true"
         android:theme="@style/Theme.InsuranceDemo3">
-        <activity android:name=".Downlaod_form"></activity>
-        <!-- @style/Theme.InsuranceDemo3 -->
+        <activity android:name=".Downlaod_form" /> <!-- @style/Theme.InsuranceDemo3 -->
         <activity android:name=".log_regi_guest.OTP_verification" />
         <activity
             android:name=".Payment"
